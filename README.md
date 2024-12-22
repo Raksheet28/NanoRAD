@@ -3,200 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoRAD</title>
+    <title>BioBioincs</title>
     <style>
         /* Global Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        /* Navigation */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px;
             background-color: #333;
-            color: white;
             position: fixed;
             width: 100%;
             z-index: 1000;
+            color: white;
         }
         nav a {
             margin: 0 15px;
             color: white;
-            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
+        /* Hero Section */
         .hero {
             height: 100vh;
-            position: relative;
-            color: white;
+            background: url('hero-background.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-        }
-        .hero video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            color: white;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: bold;
+            margin-bottom: 20px;
         }
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
-            margin: 20px auto;
+            margin: 0 auto 30px;
         }
-        .after-hero {
-            background: url('Nanoparticle%20Picture.jpg') no-repeat center center/cover;
-            color: #fff;
+        .hero button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .hero button:hover {
+            background-color: #f4f4f4;
+        }
+        /* Features Section */
+        .features {
             padding: 100px 20px;
             text-align: center;
-        }
-        .data-section {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 50px;
-        }
-        .data-box {
-            flex: 1;
-            max-width: 300px;
-            background-color: #512d6d;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .key-features {
-            padding: 50px 20px;
             background-color: #f9f9f9;
-            text-align: center;
         }
-        .key-features h2 {
+        .features h2 {
+            margin-bottom: 40px;
             font-size: 2.5rem;
         }
-        .key-features .feature-grid {
+        .features .feature-grid {
             display: flex;
+            justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
-            justify-content: center;
         }
-        .key-features .feature-box {
+        .features .feature-item {
             flex: 1;
             max-width: 300px;
-            background-color: white;
             padding: 20px;
+            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .additional-features {
-            padding: 50px 20px;
-            text-align: center;
+        .features .feature-item img {
+            width: 100%;
+            border-radius: 5px;
         }
-        .team-page {
-            padding: 50px 20px;
-            background-color: #f4f4f4;
+        .features .feature-item h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
         }
-        .team-member {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .team-member img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
         }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <h1>NanoRAD</h1>
+        <h1>BioBioincs</h1>
         <div>
             <a href="#home">Home</a>
-            <a href="#team">Team</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
-    <!-- Home Page -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <video autoplay muted loop>
-            <source src="Nanoparticle%20Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <h1>Transforming Cancer Outcomes</h1>
-        <p>Precision-driven nanoparticle-based radiotherapy for targeted treatment.</p>
+        <h1>Welcome to BioBioincs</h1>
+        <p>Pioneering the future of biotechnology with innovation and excellence.</p>
+        <button>Learn More</button>
     </section>
-    <section class="after-hero">
-        <h2>Advanced Solutions for Cancer Therapy</h2>
-        <p>Delivering exceptional outcomes with targeted radiotherapy solutions.</p>
-    </section>
-    <section class="data-section">
-        <div class="data-box">
-            <h3>5-Year Survival Rate</h3>
-            <p>Patients with advanced cancer have a relative survival rate of 35%.</p>
-        </div>
-        <div class="data-box">
-            <h3>Reduced Side Effects</h3>
-            <p>Localized therapy minimizes damage to healthy tissues.</p>
-        </div>
-    </section>
-    <section class="key-features">
-        <h2>Key Features</h2>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Features</h2>
         <div class="feature-grid">
-            <div class="feature-box">
-                <h3>Nanoparticle Design</h3>
-                <p>Engineered with a biocompatible core and antibody coating.</p>
+            <div class="feature-item">
+                <img src="feature1.jpg" alt="Feature 1">
+                <h3>Advanced Tech</h3>
+                <p>Cutting-edge biotechnology solutions for a brighter future.</p>
             </div>
-            <div class="feature-box">
-                <h3>Targeted Delivery</h3>
-                <p>Precise binding to cancer cells using advanced antibodies.</p>
+            <div class="feature-item">
+                <img src="feature2.jpg" alt="Feature 2">
+                <h3>Innovative Research</h3>
+                <p>Our dedicated team is revolutionizing the biotech industry.</p>
             </div>
-            <div class="feature-box">
-                <h3>Customizable Solutions</h3>
-                <p>Adaptable to multiple cancer types with versatile designs.</p>
+            <div class="feature-item">
+                <img src="feature3.jpg" alt="Feature 3">
+                <h3>Sustainable Solutions</h3>
+                <p>Committed to sustainable and ethical biotechnology.</p>
             </div>
         </div>
     </section>
-    <section class="additional-features">
-        <h2>Additional Features and Benefits</h2>
-        <p>Explore the advantages of our groundbreaking therapy.</p>
-    </section>
-    <!-- Team Page -->
-    <section id="team" class="team-page">
-        <h2>Meet Our Team</h2>
-        <div class="team-member">
-            <img src="team1.jpg" alt="Team Member 1">
-            <h3>Dr. Jane Doe</h3>
-            <p>Lead Research Scientist</p>
-        </div>
-        <div class="team-member">
-            <img src="team2.jpg" alt="Team Member 2">
-            <h3>Dr. John Smith</h3>
-            <p>Chief Medical Officer</p>
-        </div>
-    </section>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 NanoRAD. All Rights Reserved.</p>
+        <p>&copy; 2024 BioBioincs. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
