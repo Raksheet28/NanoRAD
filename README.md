@@ -106,7 +106,7 @@
             padding: 50px 20px;
             text-align: center;
             background-color: #f4f4f4;
-        }     
+        }       
         .team-section {
             padding: 50px 20px;
             background-color: #eef2f3;
