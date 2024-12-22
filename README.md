@@ -34,7 +34,6 @@
         }
         .hero {
             height: 100vh;
-            background: url('background-video.mp4') no-repeat center center/cover;
             position: relative;
             color: white;
             display: flex;
@@ -42,6 +41,15 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
         .hero h1 {
             font-size: 3rem;
@@ -53,7 +61,7 @@
             margin: 20px auto;
         }
         .after-hero {
-            background: url('image.jpg') no-repeat center center/cover;
+            background: url('Nanoparticle%20Picture.jpg') no-repeat center center/cover;
             color: #fff;
             padding: 100px 20px;
             text-align: center;
@@ -131,6 +139,10 @@
     </nav>
     <!-- Home Page -->
     <section id="home" class="hero">
+        <video autoplay muted loop>
+            <source src="Nanoparticle%20Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>Transforming Cancer Outcomes</h1>
         <p>Precision-driven nanoparticle-based radiotherapy for targeted treatment.</p>
     </section>
